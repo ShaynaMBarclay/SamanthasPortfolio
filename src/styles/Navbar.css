@@ -10,32 +10,68 @@
   top: 0;
   z-index: 999;
   box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2);
+  animation: fadeInDown 0.8s ease forwards;
+   backdrop-filter: blur(6px);
+  
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .navbar-name {
-  font-size: 3.7rem;
+  font-size: 3.5rem;
   font-weight: 700;
-  letter-spacing: 25px;
+  letter-spacing: 17px;
   text-transform: uppercase;
-  color: rgb(55, 53, 53);
+  color: rgb(108, 108, 108);
   font-family: "Playfair Display", serif;
+
+   opacity: 0;
+  transform: translateX(-50px);
+  animation: slideInLeft 1.2s ease-out forwards;
 }
 
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
 .book-button {
-  padding: 1rem 1.5rem;
-  background: linear-gradient(90deg, #af976a, #463e30);
-  color: white;
-  border: none;
+  position: relative;
+  z-index: 1;
+  padding: 0.8rem;
+  background: linear-gradient(90deg, #7a7a7aa1, #4343439e);
+  color: rgb(255, 255, 255);
+  border: 3px solid rgb(165, 165, 165);
   font-size: 20px;
-  border-radius: 50px;
-  font-weight: 100;
+  border-radius: 15px;
+  font-weight: 500;
   text-decoration: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
   font-family: "Playfair Display", serif;
+   letter-spacing: 1.5px;
 }
 
 .book-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px #80616b;
+  transform: scale(1);
+  box-shadow: 0 0 14px #3e3e3e;
+  animation: pulseShadow 1.5s infinite;
+
+}
+
+@keyframes pulseShadow {
+  0% { box-shadow: 0 0 10px #3e3e3e; }
+  50% { box-shadow: 0 0 20px #3e3e3e; }
+  100% { box-shadow: 0 0 10px #3e3e3e; }
 }
