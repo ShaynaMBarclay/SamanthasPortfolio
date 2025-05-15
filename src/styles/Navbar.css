@@ -1,0 +1,41 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.6rem;
+  background-color: #ffffff;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-name {
+  font-size: 3.7rem;
+  font-weight: 700;
+  letter-spacing: 25px;
+  text-transform: uppercase;
+  color: rgb(55, 53, 53);
+  font-family: "Playfair Display", serif;
+}
+
+.book-button {
+  padding: 1rem 1.5rem;
+  background: linear-gradient(90deg, #af976a, #463e30);
+  color: white;
+  border: none;
+  font-size: 20px;
+  border-radius: 50px;
+  font-weight: 100;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  font-family: "Playfair Display", serif;
+}
+
+.book-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #80616b;
+}
