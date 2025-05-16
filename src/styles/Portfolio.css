@@ -1,23 +1,36 @@
 .portfolio {
   max-width: 1300px;
   width: 100%;
-  margin: 1rem auto;
-  padding: 2rem;
+  margin: 0.1rem auto 1rem auto;
+  padding: 0.3rem;
   scroll-behavior: smooth;
-  
 }
 
 .portfolio-title {
-  padding: 1rem 0;
   text-align: center;
-  font-weight: 600;
-  font-size: 2rem;
+  font-weight: 500;
+  font-size: 80px;
+  color: rgb(97, 97, 97);
+  font-family: "Pinyon Script", cursive;
+  letter-spacing: 4px;
+
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fadeSlideIn 1.5s ease-out forwards;
 }
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 3rem;
+  gap: 6rem;
   margin-bottom: 2rem;
 }
 
@@ -35,7 +48,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.707);
   object-fit: cover;
   display: block;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
   cursor: pointer;
   overflow: hidden;
 }

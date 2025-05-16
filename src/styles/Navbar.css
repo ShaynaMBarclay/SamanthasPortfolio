@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2.3rem;
+  padding: 2.4rem;
   background-color: #ffffff;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
@@ -33,10 +33,9 @@
   text-transform: uppercase;
   color: rgb(108, 108, 108);
   font-family: "Playfair Display", serif;
-
    opacity: 0;
   transform: translateX(-50px);
-  animation: slideInLeft 1.2s ease-out forwards;
+  animation: slideInLeft 1.8s ease-out forwards;
 }
 
 @keyframes slideInLeft {
@@ -64,10 +63,7 @@
 }
 
 .book-button:hover {
-  transform: scale(1);
-  box-shadow: 0 0 14px #3e3e3e;
-  animation: pulseShadow 1.5s infinite;
-
+  transform: scale(1.12);
 }
 
 @keyframes pulseShadow {
