@@ -42,3 +42,8 @@ html, body {
   }
 }
 
+@media (max-width: 600px) {
+  .page-container {
+    overflow-y: auto;
+  }
+}

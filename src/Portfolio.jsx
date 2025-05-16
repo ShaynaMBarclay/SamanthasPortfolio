@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import "./styles/Portfolio.css";
 
-// Replace these URLs with your actual uploaded image URLs (Cloudinary or other)
+
 const portfolioImages = [
   "https://res.cloudinary.com/dizfde4uy/image/upload/v1747411604/samantha._kauogq.png",
   "https://res.cloudinary.com/dizfde4uy/image/upload/v1747414314/Your_paragraph_text_zn2e3j.png",

@@ -172,3 +172,39 @@
   }
 }
 
+/* iPad Mini Portrait / Medium Tablets */
+@media (min-width: 600px) and (max-width: 850px) {
+   .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.2rem;
+    text-align: center;
+  }
+
+  .navbar-name {
+    font-size: 2.8rem;
+    letter-spacing: 8px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .book-button {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .portfolio-title {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+  }
+
+  .portfolio-image {
+    max-width: 100%;
+  }
+}
