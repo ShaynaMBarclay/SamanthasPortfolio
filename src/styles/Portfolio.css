@@ -12,34 +12,33 @@
 .portfolio-title {
   padding: 1rem 0;
   text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
 }
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
 }
 
-/* Style for each Instagram embed blockquote */
-.instagram-media {
-    min-height: 500px;
-     aspect-ratio: 1 / 1.3;
-  width: 65% !important;
-  max-width: none !important;
-  margin: 0 !important;
-  border-radius: 12px !important;
-  overflow: hidden !important;
-  background-color: #fff !important;
-  border: 1px solid #ddd !important;
-
-  /* REMOVE animation-related properties */
-  opacity: 1 !important;
-  transform: none !important;
-  animation: none !important;
-  transition: none !important;
+/* Style for each image in the grid */
+.portfolio-grid img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
-.instagram-placeholder {
-  visibility: hidden;
-  pointer-events: none;
+.portfolio-grid img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Optional: Add some bottom margin to the container if needed */
+.portfolio-grid {
+  margin-bottom: 2rem;
 }
