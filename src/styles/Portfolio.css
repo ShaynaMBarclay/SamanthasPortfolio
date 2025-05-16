@@ -1,15 +1,17 @@
 .portfolio {
   max-width: 1300px;
-  width: 100%;
+  width: 100vw;
   margin: 0.1rem auto 1rem auto;
-  padding: 0.3rem;
+  padding: 0.3rem 1rem;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
 
 .portfolio-title {
   text-align: center;
   font-weight: 500;
-  font-size: 80px;
+  font-size: 5rem;
   color: rgb(97, 97, 97);
   font-family: "Pinyon Script", cursive;
   letter-spacing: 4px;
@@ -61,10 +63,75 @@
 
 @media (max-width: 600px) {
   .portfolio {
-    padding: 0 0.5rem;
+     padding: 0 1rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    text-align: center !important;
   }
 
   .portfolio-title {
     font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+    .portfolio-grid {
+    grid-template-columns: 1fr; 
+    gap: 1rem;
+     justify-items: center;
+  }
+
+   .portfolio-image {
+    max-width: 320px; /* or something smaller, adjust as needed */
+    width: 100%; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+
+/* Small Tablets */
+@media (max-width: 900px) {
+  .portfolio-title {
+    font-size: 3rem;
+  }
+
+  .portfolio-grid {
+    gap: 1.5rem;
+  }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+  .portfolio {
+    padding: 0 1rem;
+  }
+
+  .portfolio-title {
+    font-size: 2.25rem;
+    letter-spacing: 2px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .portfolio-image:hover {
+    transform: scale(1.05); /* reduce hover zoom on small screens */
+  }
+}
+
+/* Very small phones */
+@media (max-width: 400px) {
+  .portfolio-title {
+    font-size: 1.75rem;
+  }
+
+  .portfolio-grid {
+    gap: 0.8rem;
   }
 }

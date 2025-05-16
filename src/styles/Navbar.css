@@ -45,6 +45,12 @@
   }
 }
 
+.navbar-bg {
+  background-image: var(--navbar-bg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 3.5rem) center;
+  background-size: 36rem 9rem;
+}
 
 .book-button {
   position: relative;
@@ -71,3 +77,73 @@
   50% { box-shadow: 0 0 20px #3e3e3e; }
   100% { box-shadow: 0 0 10px #3e3e3e; }
 }
+
+/* Responsive Adjustments */
+
+/* Medium screens (tablets) */
+@media (max-width: 900px) {
+  .navbar {
+    padding: 1.6rem;
+    position: sticky;
+    top: 0;
+    
+  }
+
+  .navbar-name {
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+  }
+
+  .book-button {
+    font-size: 1.1rem;
+    padding: 0.3rem 0.8rem;
+    text-align: center;
+  }
+
+  .navbar-bg {
+    background-position: right;
+    background-size: 26rem auto;
+    
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: center;
+     position: sticky;
+    top: 0;
+  }
+
+  .navbar-name {
+    font-size: 2rem;
+    letter-spacing: 6px;
+    text-align: center;
+  }
+
+  .book-button {
+    font-size: 1rem;
+    padding: 0.5rem 0.9rem;
+    width: 40%;
+    max-width: 220px;
+    text-align: center;
+  }
+}
+
+/* Very small screens (old phones, mini devices) */
+@media (max-width: 400px) {
+  .navbar-name {
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+  }
+
+  .book-button {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+

@@ -4,14 +4,10 @@ import backgroundImage from "../assets/floralnav.png";
 
 function Navbar() {
   return (
-    <nav 
-      className="navbar" 
+       <nav 
+      className="navbar navbar-bg"
       style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'calc(100% - 3.5rem) center',
-        backgroundSize: '36rem 9rem',
-      
+        '--navbar-bg': `url(${backgroundImage})`
       }}
     >
       <div className="navbar-name">Samantha Kerivan♡</div>
