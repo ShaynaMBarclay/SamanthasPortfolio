@@ -1,4 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import "./styles/Portfolio.css";
 
 // Replace these URLs with your actual uploaded image URLs (Cloudinary or other)
@@ -33,8 +34,32 @@ const portfolioImages = [
   
 ];
 
+// Animation variants
+const containerVariants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const imageVariants = {
+  hidden: { opacity: 0, x: 50 },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  },
+};
+
+
 const Portfolio = () => {
   const [visibleCount, setVisibleCount] = useState(6);
+  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,26 +75,34 @@ const Portfolio = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  return (
+  
+   return (
     <div className="portfolio">
       <h2 className="portfolio-title">My Work</h2>
-      <div className="portfolio-grid">
-        {portfolioImages.slice(0, visibleCount).map((src, i) => (
-          <img
-            key={i}
-            src={src}
-            alt={`Portfolio image ${i + 1}`}
-            style={{
-              width: "100%",
-              borderRadius: "12px",
-              boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
-              marginBottom: "1.5rem",
-              objectFit: "cover",
-            }}
-            loading="lazy"
-          />
-        ))}
-      </div>
+        <motion.div
+        className="portfolio-grid"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.2 }} // animate on every scroll in
+      >
+      {portfolioImages.slice(0, visibleCount).map((src, i) => (
+  <motion.div
+    key={i}
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: true, amount: 0.2 }}
+    variants={imageVariants}
+  >
+    <img
+      src={src}
+      alt={`Portfolio image ${i + 1}`}
+      className="portfolio-image"
+      loading="lazy"
+    />
+  </motion.div>
+))}
+      </motion.div>
     </div>
   );
 };
