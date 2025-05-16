@@ -1,0 +1,45 @@
+.portfolio {
+  max-width: 1200px;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  scroll-behavior: smooth;
+}
+
+.portfolio-title {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+/* Style for each Instagram embed blockquote */
+.instagram-media {
+    min-height: 500px;
+     aspect-ratio: 1 / 1.3;
+  width: 65% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  background-color: #fff !important;
+  border: 1px solid #ddd !important;
+
+  /* REMOVE animation-related properties */
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
+  transition: none !important;
+}
+
+.instagram-placeholder {
+  visibility: hidden;
+  pointer-events: none;
+}
