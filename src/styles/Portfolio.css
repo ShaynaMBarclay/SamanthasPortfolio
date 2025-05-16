@@ -79,7 +79,7 @@
 
     .portfolio-grid {
     grid-template-columns: 1fr; 
-    gap: 1rem;
+    gap: 5rem;
      justify-items: center;
   }
 
@@ -132,6 +132,6 @@
   }
 
   .portfolio-grid {
-    gap: 0.8rem;
+    gap: 2rem;
   }
 }
