@@ -6,12 +6,13 @@
   background-color: #ffffff;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
-  position: sticky;
   top: 0;
   z-index: 999;
   box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2);
   animation: fadeInDown 0.8s ease forwards;
    backdrop-filter: blur(6px);
+   position: sticky;
+   z-index: 9999;
   
 }
 
