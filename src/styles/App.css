@@ -11,26 +11,28 @@
 }
 
 html, body {
+
     height: 100%;
     margin: 0;
     padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  
   }
 
  
 
   body {
     background-color: #ae98866f;
+       max-width: 100%;
+    overflow-x: hidden;
   }
 
   .page-container {
-  box-sizing: border-box;   
-  
+  box-sizing: border-box;      
   min-height: 100vh;        
   display: flex;
   flex-direction: column;
-   
 }
 
