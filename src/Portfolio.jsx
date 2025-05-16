@@ -31,6 +31,26 @@ const portfolioImages = [
   "https://res.cloudinary.com/dizfde4uy/image/upload/v1747418517/samantha.kerivan_2_d5rwtc.png",
   "https://res.cloudinary.com/dizfde4uy/image/upload/v1747418519/samantha.kerivan_1_revldo.png",
   "https://res.cloudinary.com/dizfde4uy/image/upload/v1747418519/samantha.kerivan_nre26j.png",
+  "https://res.cloudinary.com/dizfde4uy/image/upload/v1747427252/samantha_16_p2z728.png",
+  "https://res.cloudinary.com/dizfde4uy/image/upload/v1747427253/samantha_15_c1vhdd.png",
+  "https://res.cloudinary.com/dizfde4uy/image/upload/v1747427254/samantha_14_ui3c14.png",
+  "https://res.cloudinary.com/dizfde4uy/image/upload/v1747427255/samantha_13_ygwc4r.png",
+  "https://res.cloudinary.com/dizfde4uy/image/upload/v1747427256/samantha_12_msrf4i.png",
+  "https://res.cloudinary.com/dizfde4uy/image/upload/v1747427270/samantha_1_rcfano.png",
+  "https://res.cloudinary.com/dizfde4uy/image/upload/v1747427257/samantha_11_yosgpp.png",
+  "https://res.cloudinary.com/dizfde4uy/image/upload/v1747427258/samantha_10_vl6dpa.png",
+  "https://res.cloudinary.com/dizfde4uy/image/upload/v1747427259/samantha_9_dsvmbp.png",
+  "https://res.cloudinary.com/dizfde4uy/image/upload/v1747427261/samantha_8_na4e26.png",
+  "https://res.cloudinary.com/dizfde4uy/image/upload/v1747427262/samantha_7_itngay.png",
+  "https://res.cloudinary.com/dizfde4uy/image/upload/v1747427264/samantha_6_xkizud.png",
+  "https://res.cloudinary.com/dizfde4uy/image/upload/v1747427265/samantha_5_cfrjvn.png",
+  "https://res.cloudinary.com/dizfde4uy/image/upload/v1747427267/samantha_4_h4vver.png",
+  "https://res.cloudinary.com/dizfde4uy/image/upload/v1747427267/samantha_3_q2nq10.png",
+  "https://res.cloudinary.com/dizfde4uy/image/upload/v1747427269/samantha_2_dpwltx.png",
+  "https://res.cloudinary.com/dizfde4uy/image/upload/v1747427271/samantha_c3vfpu.png",
+
+
+
   
 ];
 
